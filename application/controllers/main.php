@@ -22,10 +22,29 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+<<<<<<< HEAD
 	public function index1()
 	{
 	echo 555;
 	}
 
 
+=======
+
+    public function bass(){
+        echo "bass";
+    }
+	public function blackeye()
+	{
+		$this->load->view('welcome_message');
+	}
+	public function blackeye2()
+	{
+		$this->load->view('welcome_message');
+	}
+>>>>>>> 8ec590d5492d1da26fbad7bfc7ef07b289d4027c
+}
+public function kkkk()
+{
+	$this->load->view('welcome_message');
 }
