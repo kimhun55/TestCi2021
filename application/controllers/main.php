@@ -26,4 +26,8 @@ class Main extends CI_Controller {
     public function bass(){
         echo "bass";
     }
+	public function blackeye()
+	{
+		$this->load->view('welcome_message');
+	}
 }
