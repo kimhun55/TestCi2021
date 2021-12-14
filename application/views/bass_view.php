@@ -9,7 +9,31 @@
 <body>
     kimhun55
 
-    <?php echo $name;?>
-    <?php echo $this->name;?>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>pass</th>
+            <th>category</th>
+            <th>edit</th>
+            <th>delete</th>
+        </tr>
+        <tbody>
+            <?php foreach($data as $val){?>
+            <tr>
+                <td><?php echo $val['id'];?></td>
+                <td><?php echo $val['name'];?></td>
+                <td><?php echo $val['email'];?></td>
+                <td><?php echo $val['pass'];?></td>
+                <td><?php echo $val['category']['cat_name'];?></td>
+                <td><a href="<?php echo site_url('bass/edit/').$val['id'];?>">edit</a></td>
+                <td><a href="<?php echo site_url('bass/delete/').$val['id'];?>">delete</a></td>
+
+            </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+    <a href="<?php echo site_url('bass/add');?>">add</a>
 </body>
 </html>
