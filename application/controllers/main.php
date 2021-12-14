@@ -32,7 +32,10 @@ class Main extends CI_Controller {
 =======
 
     public function bass(){
+        echo "dfsdfsd";
         echo "bass";
+        echo "dddd";
+
     }
 	public function blackeye()
 	{
