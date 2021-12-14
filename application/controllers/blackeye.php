@@ -18,9 +18,33 @@ class Blackeye extends CI_Controller { //การตั้งชื่อ class
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+    public function __construct()
+    {
+            parent::__construct();
+            // Your own constructor code
+            $this->name = 'Test'; // data main
+
+            $this->load->model('bass_model','bass');
+    }
 	public function index()
 	{
 		// $this->load->view('welcome_message');
         echo "BlackEye";
 	}
+    public function add(){
+        $this->load->view('bass_add_view');
+    }
+
+    public function save(){
+       // var_dump($_POST);
+        //$this->input->post('xxx') check scipt
+        $this->bass->save();
+
+        //$this->index();
+        redirect('bass');
+
+    }
+    public function detail(){
+        echo $this->name;
+    }
 }
