@@ -22,5 +22,6 @@ class Bass extends CI_Controller {
 	{
 		// $this->load->view('welcome_message');
         echo "bass";
+        echo "lnw";
 	}
 }
