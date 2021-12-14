@@ -13,7 +13,7 @@ class Bass extends CI_Controller {
 	public function index()
 	{
         
-
+       
         $data['name'] = "bass"; //main -> data
         $data['data'] = array(1,2,3,4);
 		$this->load->view('bass_view',$data);
