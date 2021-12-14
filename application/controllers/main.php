@@ -23,6 +23,11 @@ class Main extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
 
+	public function index1()
+	{
+	echo 555;
+	}
+
     public function bass(){
         echo "dfsdfsd";
         echo "bass";
@@ -37,6 +42,7 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+
 
     public function form(){
         $this->load->view('form_upload');
@@ -75,4 +81,10 @@ class Main extends CI_Controller {
 
                 }
         }
+
+    public function kkkk()
+    {
+        $this->load->view('welcome_message');
+    }
+
 }
