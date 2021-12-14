@@ -26,4 +26,8 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+	public function blackeye2()
+	{
+		$this->load->view('welcome_message');
+	}
 }
