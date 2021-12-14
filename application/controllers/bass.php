@@ -12,10 +12,9 @@ class Bass extends CI_Controller {
 
             $this->load->model('bass_model');
     }
+    
 	public function index()
 	{
-        
-       
         $data['name'] = "bass"; //main -> data
         $data['data'] = $this->bass_model->get_kimhun55();
         //select * From kimhun55
